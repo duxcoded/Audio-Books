@@ -27,13 +27,13 @@ voices = bot.getProperty("voices")
 bot.setProperty("voice", voices[1].id)
 ##Đọc từng trang cụ thể
 # page = pdfreader.getPage(9)
-#L#ấy text từ file pdf để đọc
+#Lấy text từ file pdf để đọc
 # text = page.extractText()
 # bot.say(text)
 # bot.runAndWait()
 
 
-#Đọc từ rang 8 đến hết sách. Ta tạo object pages ở trên để làm việc này
+#Đọc từ rang 106 đến hết sách. Ta tạo object pages ở trên để làm việc này
 for num in range(106, pages):
     page = pdfreader.getPage(num)
     text = page.extractText()
